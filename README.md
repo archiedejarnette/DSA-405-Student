@@ -17,7 +17,7 @@ The TMDB API key used to originally collect the data is private and is not inclu
 ## How to Run
 
 1. Download the submitted `tmdb_raw.json` file.
-2. Place the file in the location expected by the project notebook.
+2. tmdb_raw.json is submitted separately because it exceeds GitHub's 100 MB file limit. Place the file in the same directory as the notebook before running it
 3. Open the project notebook in Jupyter Notebook or Google Colab.
 4. Navigate to and select the cell that is labeled "TO RUN FULL NOTEBOOK START HERE", select "Run" and then "Run selected cells and all cells below". The notebook can't be ran from top to bottom because a secret API key is used. 
 
