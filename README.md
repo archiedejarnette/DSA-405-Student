@@ -1,47 +1,24 @@
-# DSA 405: Data Wrangling and Web Scraping (Fall 2026)
+# DSA 405 Movie ROI Project
 
-NC State Data Science and AI Academy · Section 002 · Fridays, Aug 21 – Nov 20
+This project examines whether movies with higher-profile actors have different returns on investment after accounting for production budget.
 
-This repository holds the student materials for DSA 405: assignments, labs, project
-handouts, rubrics, and all course datasets. Materials are posted as the course
-progresses. Moodle links point directly at files in this repo, which is the
-authoritative copy.
+The project uses movie data for films released from 2000 through 2025.
 
-## Using this repo
+## Data
 
-- **Notebooks (`.ipynb`)** open directly in Google Colab: from the notebook page on
-  GitHub, copy the URL into [Colab](https://colab.research.google.com) via
-  *File → Open notebook → GitHub*, or use the Moodle link, which opens the notebook in
-  Colab directly. Save a copy to Drive before working; edits in the preview are not
-  saved.
-- **Datasets** load over HTTPS in every lab and notebook; no manual download is needed.
-  Read [datasets/README.md](datasets/README.md) before trusting any file: every dataset
-  contains planted defects, and all data is simulated (no real restaurant, school,
-  permit, or person).
-- **Handouts and rubrics (`.md`)** render on GitHub.
+The movie data was collected from The Movie Database (TMDB) API. The raw data includes information such as movie IDs, titles, release dates, genres, production budgets, box-office revenue, and cast information.
 
-## Available now (Weeks 0–1)
+Source information is documented in `data/raw/SOURCES.md`.
 
-| File | Description |
-|---|---|
-| [Skills Self-Check](assignments/DSA405_SkillsSelfCheck_FA26.ipynb) | ~20 min, ungraded; report the result inside A1 |
-| [The Bridge: Python Essentials](assignments/DSA405_Bridge_PythonEssentials_FA26.ipynb) | The subset of Python the course uses |
-| [Reading Python translation sheet](assignments/DSA405_Bridge_ReadingPython.md) | For students arriving from R, SQL, or Excel |
-| [A1: About Me](assignments/DSA405_A1_AboutMe_FA26.ipynb) | Due Thu Aug 27, 11:59 PM |
-| [P0: Workspace](assignments/projects/DSA405_P0_Workspace_FA26.md) | Due Thu Aug 27, 11:59 PM |
-| [P1: Framing a Data Problem](assignments/projects/DSA405_P1_FramingADataProblem_FA26.md) | Due Thu Sep 3, 11:59 PM |
-| [Lab Rubric](course/DSA405_LabRubric_FA26.md) | The four criteria used for every A1–A9 |
-| [Project Rubrics](course/DSA405_ProjectRubrics_FA26.md) | P1–P4 and the lightning talk |
-| [datasets/](datasets/) | All seven course datasets, used from Week 1 (P0) onward |
+The original raw dataset, `tmdb_raw.json`, is approximately 433 MB and exceeds GitHub's 100 MB file-size limit. Following instructor guidance, the raw file is submitted separately with the assignment rather than uploaded to this repository.
 
-Weekly labs and later assignments appear here before the Friday they are used.
+The TMDB API key used to originally collect the data is private and is not included in this repository.
 
-## Submissions
+## How to Run
 
-All graded work is submitted through Moodle, named
-`DSA405_002_FA26_[A#|P#]_[yourUnityID]`. Nothing is submitted through GitHub except the
-`dsa405-project` repo that P0 sets up.
+1. Download the submitted `tmdb_raw.json` file.
+2. Place the file in the location expected by the project notebook.
+3. Open the project notebook in Jupyter Notebook or Google Colab.
+4. Restart the kernel and run the notebook from top to bottom.
 
-If anything here fails to load (a dead link, a notebook that will not open, a dataset
-URL that errors), post to the week's Moodle forum immediately rather than waiting with
-a broken environment.
+The notebook begins with the preserved raw TMDB data and performs the audit, cleaning, and creation of the variables used for the analysis.
