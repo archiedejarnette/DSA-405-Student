@@ -16,9 +16,19 @@ The TMDB API key used to originally collect the data is private and is not inclu
 
 ## How to Run
 
-1. Download the submitted `tmdb_raw.json` file.
-2. tmdb_raw.json is submitted separately because it exceeds GitHub's 100 MB file limit. Place the file in the same directory as the notebook before running it
-3. Open the project notebook in Jupyter Notebook or Google Colab.
-4. Navigate to and select the cell that is labeled "TO RUN FULL NOTEBOOK START HERE", select "Run" and then "Run selected cells and all cells below". The notebook can't be ran from top to bottom because a secret API key is used. 
+1. Download the separately submitted `tmdb_raw.json` file.
+2. Place `tmdb_raw.json` in the `data/raw/` folder so that the full path is:
+
+   `data/raw/tmdb_raw.json`
+
+3. Open the project notebook in Jupyter Notebook.
+4. Restart the kernel.
+5. Run the notebook from top to bottom.
+
+The notebook includes the original TMDB API collection code to document how the raw dataset was created. This code is disabled by default with `RUN_SCRAPE = False`, so the notebook does not require a TMDB API key when run normally.
+
+The notebook loads the preserved raw dataset from `data/raw/tmdb_raw.json` and then performs the data audit, cleaning, and creation of the variables used for the analysis.
+
+The notebook does not write to or modify files inside `data/raw/`.
 
 The notebook begins with the preserved raw TMDB data and performs the audit, cleaning, and creation of the variables used for the analysis.
