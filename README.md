@@ -72,3 +72,20 @@ The notebook includes validation checks to confirm that the join preserves the e
 1. Open the P4 notebook in Google Colab.
 2. Restart the runtime.
 3. Run the notebook from top to bottom.
+
+
+## Repository Structure
+
+```text
+DSA-405-Student/
+├── README.md
+├── DSA405_002_FA26_P2_hadejarn.ipynb
+├── DSA405_002_FA26_P3_hadejarn.ipynb
+├── DSA405_002_FA26_P4_hadejarn.ipynb
+├── data/
+│   ├── raw/
+│   │   ├── SOURCES.md
+│   │   └── title.ratings.tsv.gz
+│   └── clean/
+│       ├── tmdb_clean.json
+│       └── movie_data.csv
