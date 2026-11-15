@@ -8,7 +8,13 @@ The project uses movie data from The Movie Database (TMDB) API and ratings data 
 
 The TMDB data includes information such as movie IDs, IMDb IDs, titles, release dates, genres, production budgets, box-office revenue, and cast information. The cleaned TMDB dataset used for P3 is stored in data/clean/tmdb_clean.json.
 
+TMDB API documentation: https://developer.themoviedb.org/
+TMDB permits non-commercial API use with attribution, subject to its terms of use.
+
 IMDb ratings data is retrieved from IMDb's official downloadable dataset at https://datasets.imdbws.com/title.ratings.tsv.gz. The raw IMDb file is saved to data/raw/title.ratings.tsv.gz and contains IMDb title IDs, average ratings, and number of votes.
+
+IMDb dataset information: https://developer.imdb.com/non-commercial-datasets/
+IMDb provides its downloadable datasets for personal and non-commercial use under its dataset usage terms.
 
 Source information is documented in data/raw/SOURCES.md.
 
