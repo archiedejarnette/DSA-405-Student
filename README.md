@@ -38,16 +38,12 @@ The notebook does not write to or modify files inside `data/raw/`.
 The notebook begins with the preserved raw TMDB data and performs the audit, cleaning, and creation of the variables used for the analysis.
 
 ### P3
-
-1. Make sure the cleaned TMDB dataset is available at:
-
-   `data/clean/tmdb_clean.json`
    
-2. Open the P3 notebook in Google Colab.
+1. Open the P3 notebook in Google Colab.
 
-3. Restart the runtime.
+2. Restart the runtime.
 
-4. Run the notebook from top to bottom.
+3. Run the notebook from top to bottom.
 
 The notebook creates the required `data/raw/` and `data/clean/` folders if they do not already exist.
 
