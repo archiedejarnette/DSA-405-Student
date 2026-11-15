@@ -1,8 +1,6 @@
 # DSA 405 Movie ROI Project
 
-This project examines whether movies with higher-profile actors have different returns on investment after accounting for production budget.
-
-The project uses movie data for films released from 2000 through 2025.
+Many movies coming out currently are able to be financially successful, despite having low budgets and relatively unknown casts. To test this relationship, this project examines whether movies with higher-profile actors have different returns on investment after accounting for production budget. The project uses movie data for films released from 2000 through 2025. However, the final analysis showed that there was not a strong correlation between actor popularity and return on investent, when accounting for a movie's budget. Instead, successful movies are defined by a multitude of different contributing factors. 
 
 ## Data
 
@@ -66,3 +64,9 @@ The final integrated dataset contains 5,810 rows and is saved as:
 `data/clean/movie_data.csv`
 
 The notebook includes validation checks to confirm that the join preserves the expected row count and that important values in the final dataset remain valid.
+
+### P4
+
+1. Open the P4 notebook in Google Colab.
+2. Restart the runtime.
+3. Run the notebook from top to bottom.
